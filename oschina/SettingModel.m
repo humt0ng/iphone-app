@@ -17,6 +17,7 @@
 
 - (id)initWith:(NSString *)_title andImg:(NSString *)_img andTag:(NSUInteger)_tag andTitle2:(NSString *)_title2;
 {
+    //@htg init可以这么做
     SettingModel *result = [[SettingModel alloc] init];
     result.title = _title;
     result.img = _img;

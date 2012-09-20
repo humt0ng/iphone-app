@@ -128,7 +128,7 @@
 {
     int newTabIndex = self.tabBarController.selectedIndex;
     if (newTabIndex == m_lastTabIndex) {
-        
+        //@htg 用notify是个好东西
         [[NSNotificationCenter defaultCenter] postNotificationName:Notification_TabClick object:[NSString stringWithFormat:@"%d", newTabIndex]];
     }
     else
